@@ -11,12 +11,12 @@ namespace PalTracker
         public WelcomeController(WelcomeMessage Message){
             _message=Message;
         }
-
+/* 
         [HttpGet]
         public string SayHello()=>"hello";
-
+        */
         [HttpGet]
-        public string RandController(){
+        public string SayHello(){
             return _message.Message;
         }
     }
