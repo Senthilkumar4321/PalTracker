@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-   <ProjectReference Include="..\..\src\PalTracker\PalTracker.csproj" />
+   <ProjectReference Include="..\src\PalTracker\PalTracker.csproj" />
   </ItemGroup>
 
 </Project>
