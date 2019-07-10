@@ -34,10 +34,10 @@ jobs:
               command: |
                 bash ./scripts/build.sh $CIRCLE_SHA1
 
-        - store_artifacts:
+      - store_artifacts:
             path: artifacts
 
-        - persist_to_workspace:
+      - persist_to_workspace:
             root: artifacts
             paths:
               - pal-tracker-*.tgz
