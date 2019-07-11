@@ -40,8 +40,7 @@ namespace PalTracker
                 Configuration.GetValue<string>("CF_INSTANCE_ADDR")
             ));
 
-           services.AddScoped<ITimeEntryRepository, MySqlTimeEntryRepository>();
-
+            services.AddScoped<ITimeEntryRepository, MySqlTimeEntryRepository>();
             services.AddDbContext<TimeEntryContext>(options => options.UseMySql(Configuration));
         }
 
